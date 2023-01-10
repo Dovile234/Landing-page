@@ -1,0 +1,72 @@
+.ellipse-wrapper {
+  position: absolute;
+  left: -66px;
+  top: 420px;
+}
+.intro-content {
+  max-width: 515px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  position: relative;
+
+  @include md {
+    min-width: 350px;
+  }
+
+  @include sm {
+    min-width: 245px;
+    margin-left: 0;
+  }
+
+  .ellipse {
+    position: absolute;
+    top: 87px;
+    left: 144px;
+    
+    @include lg {
+      top: 115px;
+  left: 92px;
+    }
+
+  }
+
+  h1 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0;
+    color: $color-dark;
+    text-transform: uppercase;
+    @include lg {
+      font-size: 25px;
+    }
+
+    @include sm {
+      font-size: 24px;
+    }
+    
+  }
+  .intro-text {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 24px 0 32px;
+  color: $color-light;
+
+  @include lg {
+    font-size: 15px;
+  }
+
+  @include sm {
+    font-size: 10px;
+  }
+}
+  
+}
+.intro-image-wrapper {
+  margin-right: 85px;
+
+  img {
+    width: 343px;
+  }
+}

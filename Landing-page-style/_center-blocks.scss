@@ -1,0 +1,71 @@
+.block-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 56px;
+  column-gap: 40px;
+  position: relative;
+  .dots {
+    position: absolute;
+    left: -34px;
+    bottom: -40px;
+  }
+  .rectangle-center-section {
+    position: absolute;
+    bottom: -47px;
+    right: -123px;
+
+    @include lg {
+      display: none;
+    }
+  }
+  .inner-block {
+    padding: 78px 50px 72px;
+    background-color: $color-white;
+    border-radius: 10px;
+    z-index: 10;
+    
+    @include lg {
+      min-width: 330px;
+    }
+
+    @include md {
+      min-width: 290px;
+      padding: 56px 50px;
+    }
+
+    @include sm {
+      min-width: 200px;
+      padding: 21px 31px;
+    }
+    &:hover {
+      background-color: $color-green;
+      color: $color-white;
+      h3 {
+        color: $color-white;
+      }
+      .filter {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(7498%) hue-rotate(88deg) brightness(113%) contrast(101%);
+      }
+    }
+    h3 {
+      @include md {
+       font-size: 20px;
+      }
+
+      @include sm {
+        font-size: 15px;
+      }
+     }
+     p {
+      @include md {
+        font-size: 14px;
+      }
+     }
+     @include sm {
+      font-size: 8px;
+    }
+    .filter {
+      width: 32px;
+    } 
+  }
+}

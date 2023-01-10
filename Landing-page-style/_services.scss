@@ -1,0 +1,110 @@
+.side-section {
+  position: relative;
+  width: 34%;
+
+  @include lg {
+    width: 60%;
+    margin-bottom: 50px;
+  }
+
+  @include md {
+    width: 80%;
+  }
+  .rectangle {
+    position: absolute;
+    top: -40px;
+    right: 7px;
+  }
+ 
+  p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .button {
+    display: block;
+  }
+}
+.trip-list {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  @include lg {
+    width: 90%;
+  }
+
+  @include md {
+    width: 100%;
+  }
+
+  @include sm {
+    gap: 21px;
+  }
+
+  .trip-list-item {
+    padding: 50px;
+    width: calc(50% - 20px);
+    text-decoration: none;
+
+    @include sm {
+      padding: 21px 24px;
+    }
+
+    &:hover {
+      background-color: $color-white;
+      border-radius: 10px;
+      padding-right: 0;
+      .image-wrapper {
+        background-color: $color-green;
+        .filter {
+          filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(7498%) hue-rotate(88deg) brightness(113%) contrast(101%);
+        }
+      }
+      p {
+        margin-left: 45px;
+
+        
+      @include sm {
+        font-size: 8px;
+      }
+
+        @include sm {
+          padding: 0;
+          font-size: 8px;
+        }
+      }
+      
+    }
+    .image-wrapper {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background-color: $color-white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include sm {
+        width: 25px;
+        height: 25px;
+      }
+
+      img {
+        width: 15px;
+      }
+    }
+
+    h3 {
+      margin-top: 16px;
+      margin-bottom: 7px;
+
+    }
+    p {
+      font-size: 13px;
+      color: $color-light;
+      margin: 0;
+
+    }
+  }
+}

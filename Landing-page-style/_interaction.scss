@@ -1,0 +1,68 @@
+.interaction-image-wrapper {
+  width: 563px;
+    padding-bottom: 60px;
+    position: relative;
+    &::after {
+      content: "";
+      background: rgb(239,128,49);
+      background: linear-gradient(24deg, rgba(239,128,49,0) 0%, rgba(239,128,49,0.22172619047619047) 100%);
+     width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
+
+      @include md {
+        top: 30px;
+      left: 30px;
+      }
+    }
+
+    @include lg {
+      width: 400px;
+
+    }
+
+    @include md {
+      position: absolute;
+      width: 286px;
+      top: 20px;
+      left: -220px;
+      padding-bottom: 30px;
+    }
+
+    @include sm {
+      left: -280px;
+    }
+  .interaction-image {
+    width: 100%;
+  } 
+
+ 
+}
+.interaction-content-wrapper {
+  width: 35%;
+  margin-top: 70px;
+
+  @include md {
+    width:  70%;
+    margin-left: auto;
+
+  }
+
+  p{
+    margin-top: 24px;
+    margin-bottom: 40px;
+
+    @include sm {
+      font-size: 10px;
+    }
+
+  }
+
+  .button {
+    display: block;
+  } 
+}

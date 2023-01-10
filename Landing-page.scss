@@ -1,0 +1,58 @@
+@import "Landing-page-style/variables";
+@import "Landing-page-style/responsive";
+@import "Landing-page-style/base";
+@import "Landing-page-style/header";
+@import "Landing-page-style/hero";
+@import "Landing-page-style/services";
+@import "Landing-page-style/center-blocks";
+@import "Landing-page-style/interaction";
+@import "Landing-page-style/slider-wrapper";
+@import "Landing-page-style/footer";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.intro {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 61px 0 141px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 60px 30px 140px;
+  max-width: 1220px;
+} 
+
+  .services-wrapper {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding-bottom: 100px;
+
+  }
+
+  .center-blocks {
+    padding-bottom: 170px;
+ .block-heading {
+  text-align: center;
+ }
+  }
+  
+.interaction-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 197px;
+  position: relative;
+
+  
+}
+.slider-wrapper {
+  padding-bottom: 172px;
+  position: relative;
+}
+
