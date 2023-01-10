@@ -59,7 +59,7 @@ body {
 @media (max-width: 1050px) {
   .button-big::after {
     content: "";
-    background-image: url(./landing-page-images/Vector.svg);
+    background-image: url("landing-page-images/Vector.svg");
     width: 23px;
     height: 18px;
     position: absolute;

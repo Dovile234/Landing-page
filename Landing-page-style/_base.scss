@@ -50,7 +50,7 @@ background: linear-gradient(5deg, rgba(255,255,255,1) 0%, rgba(253,250,246,1) 34
   }
   &::after {
     content: '';
-    background-image: url(./landing-page-images/Vector.svg);
+    background-image: url("landing-page-images/Vector.svg");
     width: 23px;
 height: 18px;
 position: absolute;
