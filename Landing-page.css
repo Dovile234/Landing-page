@@ -49,26 +49,24 @@ body {
     max-width: 280px;
   }
 }
-@media (max-width: 1050px) and (max-width: 580px) {
+@media (max-width: 580px) {
   .button-big {
     max-width: 195px;
     font-size: 10px;
     padding: 15px 16px;
   }
 }
-@media (max-width: 1050px) {
-  .button-big::after {
-    content: "";
-    background-image: url("landing-page-images/Vector.svg");
-    width: 23px;
-    height: 18px;
-    position: absolute;
-    display: block;
-    background-repeat: no-repeat;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-  }
+.button-big::after {
+  content: "";
+  background-image: url("landing-page-images/Vector.svg");
+  width: 23px;
+  height: 18px;
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
 }
 
 .sub-title {
